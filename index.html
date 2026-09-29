@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff5f7">
+  <title>Have a wonderful day sweetheart</title>
+  <style>
+    :root {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #6b2948;
+      background: #fff5f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.95), transparent 28rem),
+        linear-gradient(135deg, #ffe6ee 0%, #fff7e8 52%, #f2e8ff 100%);
+    }
+    main {
+      width: min(90vw, 760px);
+      padding: clamp(2.5rem, 8vw, 6rem);
+      text-align: center;
+      border: 1px solid rgba(255,255,255,.85);
+      border-radius: 2rem;
+      background: rgba(255,255,255,.62);
+      box-shadow: 0 1.5rem 5rem rgba(107,41,72,.14);
+      backdrop-filter: blur(12px);
+    }
+    .heart {
+      display: block;
+      margin-bottom: 1.25rem;
+      color: #e85d8e;
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      line-height: 1;
+      animation: pulse 2.2s ease-in-out infinite;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 7vw, 5.25rem);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+    @keyframes pulse {
+      50% { transform: scale(1.08); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .heart { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="heart" aria-hidden="true">♥</span>
+    <h1>Have a wonderful day sweetheart</h1>
+  </main>
+</body>
+</html>
